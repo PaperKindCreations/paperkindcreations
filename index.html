@@ -45,7 +45,7 @@
     .prints-container {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 30px;
+      gap: 40px;
       justify-items: center;
       max-width: 1200px;
       margin: 0 auto;
@@ -53,7 +53,16 @@
 
     .print-item {
       text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .print-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
     }
 
     .print-item img {
@@ -62,63 +71,14 @@
       border-radius: 12px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.08);
       display: block;
-      margin-bottom: 12px;
+      margin: 10px auto;
     }
 
     .print-item h3 {
       font-family: 'Georgia', serif;
       font-size: 1.2em;
       color: #7b5e57;
-      margin-top: 0;
-    }
-
-    .print-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.12);
-    }
-
-    @media (min-width: 600px) {
-      .prints-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 900px) {
-      .prints-container {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    /* Products Section */
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .product {
-      background-color: #FFFFFF;
-      border-radius: 10px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    .product img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .product h3 {
-      margin: 10px 0 5px 0;
-    }
-
-    .product p {
-      font-size: 0.9em;
-      color: #555;
+      margin: 12px 0;
     }
 
     .btn {
@@ -129,6 +89,24 @@
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #5e4438;
+    }
+
+    /* Responsive layout */
+    @media (min-width: 600px) {
+      .prints-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .prints-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     footer {
@@ -151,37 +129,21 @@
   <section id="prints">
     <h2>Our Prints</h2>
     <div class="prints-container">
+      <!-- First Print -->
       <div class="print-item">
-        <img src="images/full-life-stomach.png" alt="You can’t live a full life on an empty stomach">
+        <img src="images/full-life-stomach-mockup.png" alt="Mockup of 'You can’t live a full life on an empty stomach'">
+        <img src="images/full-life-stomach-print.png" alt="Actual print of 'You can’t live a full life on an empty stomach'">
         <h3>You can’t live a full life on an empty stomach</h3>
+        <a href="#" class="btn">Buy Now</a>
       </div>
-      <div class="print-item">
-        <img src="images/second-print.png" alt="Second Print Title">
-        <h3>Second Print Title</h3>
-      </div>
-      <!-- Add more prints here -->
-    </div>
-  </section>
 
-  <!-- Products Section -->
-  <section class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/300x400.png?text=Quirky+Poster+1" alt="Quirky Poster 1">
-      <h3>Quirky Phrase Poster 1</h3>
-      <p>Instant digital download</p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/300x400.png?text=Food+Poster+1" alt="Food Poster 1">
-      <h3>Food Wall Art 1</h3>
-      <p>Instant digital download</p>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/300x400.png?text=Quirky+Poster+2" alt="Quirky Poster 2">
-      <h3>Quirky Phrase Poster 2</h3>
-      <p>Instant digital download</p>
-      <a href="#" class="btn">Buy Now</a>
+      <!-- Second Print -->
+      <div class="print-item">
+        <img src="images/second-print-mockup.png" alt="Second print mockup">
+        <img src="images/second-print-print.png" alt="Actual second print">
+        <h3>Second Print Title</h3>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
     </div>
   </section>
 
