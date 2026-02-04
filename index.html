@@ -10,86 +10,86 @@
       font-family: 'Poppins', sans-serif;
       background-color: #F7F5F2;
       color: #2B2B2B;
-    }<!-- Prints Section -->
-<section id="prints" style="padding: 60px 20px; background-color: #f9f7f2; text-align: center;">
-  <h2 style="font-family: 'Georgia', serif; font-size: 2.5em; color: #7b5e57; margin-bottom: 50px;">
-    Our Prints
-  </h2>
-
-  <div class="prints-container">
-
-    <!-- First Print: "You can’t live a full life on an empty stomach" -->
-    <div class="print-item">
-      <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
-        <img src="images/full-life-stomach-mockup.png" alt="Mockup of print" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
-        <img src="images/full-life-stomach-print.png" alt="Actual print" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
-      </div>
-      <h3 style="font-family: 'Georgia', serif; font-size: 1.2em; color: #7b5e57; margin-top: 12px;">
-        You can’t live a full life on an empty stomach
-      </h3>
-    </div>
-
-    <!-- Second Print -->
-    <div class="print-item">
-      <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
-        <img src="images/second-print-mockup.png" alt="Second print mockup" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
-        <img src="images/second-print-print.png" alt="Second print actual" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
-      </div>
-      <h3 style="font-family: 'Georgia', serif; font-size: 1.2em; color: #7b5e57; margin-top: 12px;">
-        Second Print Title
-      </h3>
-    </div>
-
-  </div>
-</section>
-
-<!-- Responsive and aesthetic styling -->
-<style>
-  .prints-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .print-item {
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .print-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
-  }
-
-  @media (min-width: 600px) {
-    .prints-container {
-      grid-template-columns: repeat(2, 1fr);
     }
-  }
-
-  @media (min-width: 900px) {
-    .prints-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-</style>
 
     header {
       text-align: center;
       padding: 50px 20px;
     }
+
     header h1 {
       font-size: 2.5em;
       margin: 0;
     }
+
     header p {
       font-size: 1.2em;
       margin-top: 10px;
       color: #7A6B61;
     }
+
+    /* Prints Section */
+    #prints {
+      padding: 60px 20px;
+      background-color: #f9f7f2;
+      text-align: center;
+    }
+
+    #prints h2 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5em;
+      color: #7b5e57;
+      margin-bottom: 50px;
+    }
+
+    .prints-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      justify-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .print-item {
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .print-item img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .print-item h3 {
+      font-family: 'Georgia', serif;
+      font-size: 1.2em;
+      color: #7b5e57;
+      margin-top: 0;
+    }
+
+    .print-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+    }
+
+    @media (min-width: 600px) {
+      .prints-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .prints-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Products Section */
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -98,6 +98,7 @@
       max-width: 1200px;
       margin: auto;
     }
+
     .product {
       background-color: #FFFFFF;
       border-radius: 10px;
@@ -105,226 +106,64 @@
       text-align: center;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
+
     .product img {
       width: 100%;
       border-radius: 8px;
     }
+
     .product h3 {
       margin: 10px 0 5px 0;
     }
+
     .product p {
       font-size: 0.9em;
       color: #555;
-  </h2>
-
-  <div class="prints-container">
-    <!-- First Print (new print) -->
-    <div class="print-item">
-      <img src="images/full-life-stomach.png" alt="You can’t live a full life on an empty stomach">
-      <h3>You can’t live a full life on an empty stomach</h3>
-    </div>
-
-    <!-- Example Print Item (replace with your own) -->
-    <div class="print-item">
-      <img src="images/your-print-2.jpg" alt="Print Title 2">
-      <h3>Print Title 2</h3>
-    </div>
-
-    <!-- Add more prints by duplicating this block -->
-  </div>
-</section>
-
-<!-- Responsive and aesthetic styling -->
-<style>
-  .prints-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .print-item {
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .print-item img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    display: block;
-  }
-
-  .print-item h3 {
-    font-family: 'Georgia', serif;
-    font-size: 1.2em;
-    color: #7b5e57;
-    margin-top: 12px;
-  }
-
-  .print-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
-  }
-<section id="prints" style="padding: 60px 20px; background-color: #f9f7f2; text-align: center;">
-  <h2 style="font-family: 'Georgia', serif; font-size: 2.5em; color: #7b5e57; margin-bottom: 50px;">
-    Our Prints
-  </h2>
-
-  <div class="prints-container">
-    <!-- First Print with Mockup + Actual Print -->
-    <div class="print-item">
-      <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
-        <img src="images/full-life-stomach-mockup.png" alt="Mockup of print" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
-        <img src="images/full-life-stomach-print.png" alt="Actual print" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
-      </div>
-      <h3 style="font-family: 'Georgia', serif; font-size: 1.2em; color: #7b5e57; margin-top: 12px;">
-        You can’t live a full life on an empty stomach
-      </h3>
-    </div>
-
-    <!-- Second Print with Mockup + Actual Print -->
-    <div class="print-item">
-      <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
-        <img src="images/second-print-mockup.png" alt="Second print mockup" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
-        <img src="images/second-print-print.png" alt="Second print actual" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
-      </div>
-      <h3 style="font-family: 'Georgia', serif; font-size: 1.2em; color: #7b5e57; margin-top: 12px;">
-        Second Print Title
-      </h3>
-    </div>
-  </div>
-</section>
-
-<style>
-  .prints-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .print-item {
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .print-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
-  }
-
-  @media (min-width: 600px) {
-    .prints-container {
-      grid-template-columns: repeat(2, 1fr);
     }
-  }
 
-  @media (min-width: 900px) {
-    .prints-container {
-      grid-template-columns: repeat(2, 1fr);
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #7b5e57;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
     }
-  }
-</style>
 
-  /* Responsive layout */
-  @media (min-width: 600px) {
-    .prints-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 900px) {
-    .prints-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-</style>
-<!-- Prints Section -->
-<section id="prints" style="padding: 60px 20px; background-color: #f9f7f2; text-align: center;">
-  <h2 style="font-family: 'Georgia', serif; font-size: 2.5em; color: #7b5e57; margin-bottom: 50px;">
-    Our Prints
-  </h2>
-
-  <div class="prints-container">
-    <!-- First Print -->
-    <div class="print-item">
-      <img src="images/full-life-stomach.png" alt="You can’t live a full life on an empty stomach">
-      <h3>You can’t live a full life on an empty stomach</h3>
-    </div>
-
-    <!-- Second Print -->
-    <div class="print-item">
-      <img src="images/second-print.png" alt="Your Second Print Title">
-      <h3>Your Second Print Title</h3>
-    </div>
-  </div>
-</section>
-
-<!-- Responsive and aesthetic styling -->
-<style>
-  .prints-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    justify-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .print-item {
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .print-item img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    display: block;
-  }
-
-  .print-item h3 {
-    font-family: 'Georgia', serif;
-    font-size: 1.2em;
-    color: #7b5e57;
-    margin-top: 12px;
-  }
-
-  .print-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
-  }
-
-  /* Responsive layout */
-  @media (min-width: 600px) {
-    .prints-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 900px) {
-    .prints-container {
-      grid-template-columns: repeat(2, 1fr); /* two prints side by side on large screens */
-    }
-  }
-</style>
-
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #f0eee9;
+      color: #555;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>PaperKindCreations</h1>
     <p>Quirky phrase & food digital prints • Instant downloads only</p>
   </header>
 
+  <!-- Prints Section -->
+  <section id="prints">
+    <h2>Our Prints</h2>
+    <div class="prints-container">
+      <div class="print-item">
+        <img src="images/full-life-stomach.png" alt="You can’t live a full life on an empty stomach">
+        <h3>You can’t live a full life on an empty stomach</h3>
+      </div>
+      <div class="print-item">
+        <img src="images/second-print.png" alt="Second Print Title">
+        <h3>Second Print Title</h3>
+      </div>
+      <!-- Add more prints here -->
+    </div>
+  </section>
+
+  <!-- Products Section -->
   <section class="products">
     <div class="product">
       <img src="https://via.placeholder.com/300x400.png?text=Quirky+Poster+1" alt="Quirky Poster 1">
@@ -349,5 +188,6 @@
   <footer>
     <p>All prints are digital downloads only. Print at home or locally. Made with ❤️ by PaperKindCreations.</p>
   </footer>
+
 </body>
 </html>
