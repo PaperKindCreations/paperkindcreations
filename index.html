@@ -10,7 +10,73 @@
       font-family: 'Poppins', sans-serif;
       background-color: #F7F5F2;
       color: #2B2B2B;
+    }<!-- Prints Section -->
+<section id="prints" style="padding: 60px 20px; background-color: #f9f7f2; text-align: center;">
+  <h2 style="font-family: 'Georgia', serif; font-size: 2.5em; color: #7b5e57; margin-bottom: 50px;">
+    Our Prints
+  </h2>
+
+  <div class="prints-container">
+
+    <!-- First Print: "You can’t live a full life on an empty stomach" -->
+    <div class="print-item">
+      <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+        <img src="images/full-life-stomach-mockup.png" alt="Mockup of print" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
+        <img src="images/full-life-stomach-print.png" alt="Actual print" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
+      </div>
+      <h3 style="font-family: 'Georgia', serif; font-size: 1.2em; color: #7b5e57; margin-top: 12px;">
+        You can’t live a full life on an empty stomach
+      </h3>
+    </div>
+
+    <!-- Second Print -->
+    <div class="print-item">
+      <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+        <img src="images/second-print-mockup.png" alt="Second print mockup" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
+        <img src="images/second-print-print.png" alt="Second print actual" style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
+      </div>
+      <h3 style="font-family: 'Georgia', serif; font-size: 1.2em; color: #7b5e57; margin-top: 12px;">
+        Second Print Title
+      </h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- Responsive and aesthetic styling -->
+<style>
+  .prints-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .print-item {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .print-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+  }
+
+  @media (min-width: 600px) {
+    .prints-container {
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  @media (min-width: 900px) {
+    .prints-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+
     header {
       text-align: center;
       padding: 50px 20px;
