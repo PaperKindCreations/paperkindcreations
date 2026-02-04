@@ -121,24 +121,77 @@
     }
   }
 </style>
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background-color: #C1A48F;
-      color: #FFF;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s;
+<!-- Prints Section -->
+<section id="prints" style="padding: 60px 20px; background-color: #f9f7f2; text-align: center;">
+  <h2 style="font-family: 'Georgia', serif; font-size: 2.5em; color: #7b5e57; margin-bottom: 50px;">
+    Our Prints
+  </h2>
+
+  <div class="prints-container">
+    <!-- First Print -->
+    <div class="print-item">
+      <img src="images/full-life-stomach.png" alt="You can’t live a full life on an empty stomach">
+      <h3>You can’t live a full life on an empty stomach</h3>
+    </div>
+
+    <!-- Second Print -->
+    <div class="print-item">
+      <img src="images/second-print.png" alt="Your Second Print Title">
+      <h3>Your Second Print Title</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Responsive and aesthetic styling -->
+<style>
+  .prints-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .print-item {
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .print-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    display: block;
+  }
+
+  .print-item h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    color: #7b5e57;
+    margin-top: 12px;
+  }
+
+  .print-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+  }
+
+  /* Responsive layout */
+  @media (min-width: 600px) {
+    .prints-container {
+      grid-template-columns: repeat(2, 1fr);
     }
-    .btn:hover {
-      background-color: #A6896C;
+  }
+
+  @media (min-width: 900px) {
+    .prints-container {
+      grid-template-columns: repeat(2, 1fr); /* two prints side by side on large screens */
     }
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      font-size: 0.9em;
-      color: #7A6B61;
+  }
+</style>
+
     }
   </style>
 </head>
